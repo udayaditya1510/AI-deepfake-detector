@@ -86,13 +86,18 @@ Main backend file:
 ```bash
 git clone https://github.com/yourusername/deepfake-detector.git
 cd deepfake-detector
+```
 
 ## 2️⃣ Create Virtual Environment
+```bash
 python -m venv venv
 venv\Scripts\activate   # Windows
+```
 
 ## 3️⃣ Install Dependencies
+```bash
 pip install -r requirements.txt
+```
 requirements.txt includes:
 
 torch==2.1.2
@@ -103,3 +108,55 @@ pillow
 fastapi
 uvicorn
 python-multipart
+
+▶️ Running the Application
+Start FastAPI server:
+```bash
+uvicorn app:app --reload
+```
+Open in browser:
+http://127.0.0.1:8000
+
+🧠 Training the Models
+Train Image Model
+```bash
+python train.py
+```
+Dataset structure:
+```code
+dataset/
+ ├── real/
+ └── fake/
+```
+Output:
+
+deepfake_model.pth
+Train Video Model
+python video_train.py
+
+Dataset structure:
+
+video_dataset/
+ ├── real/
+ └── fake/
+
+Output:
+video_deepfake_model.pth
+
+⚙️ Tech Stack
+Python
+PyTorch
+Torchvision
+OpenCV
+FastAPI
+Uvicorn
+Pillow
+NumPy
+
+📊 Features
+Image Deepfake Detection
+Video Deepfake Detection
+REST API Support
+Web UI
+GPU Support (CUDA)
+Pretrained Backbone
