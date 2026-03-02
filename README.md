@@ -100,23 +100,20 @@ pip install -r requirements.txt
 ```
 requirements.txt includes:
 
-torch==2.1.2
-torchvision==0.16.2
-numpy==1.26.4
-opencv-python==4.9.0.80
-pillow
-fastapi
-uvicorn
-python-multipart
+- torch==2.1.2
+- torchvision==0.16.2
+- numpy==1.26.4
+- opencv-python==4.9.0.80
+- pillow
+- fastapi
+- uvicorn
+- python-multipart
 
 ▶️ Running the Application
 Start FastAPI server:
 ```bash
 uvicorn app:app --reload
 ```
-Open in browser:
-http://127.0.0.1:8000
-
 🧠 Training the Models
 Train Image Model
 ```bash
@@ -129,11 +126,11 @@ dataset/
  └── fake/
 ```
 Output:
-
+```code
 deepfake_model.pth
 Train Video Model
 python video_train.py
-
+```
 Dataset structure:
 ```code
 video_dataset/
