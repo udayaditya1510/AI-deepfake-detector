@@ -98,8 +98,7 @@ venv\Scripts\activate   # Windows
 ```bash
 pip install -r requirements.txt
 ```
-requirements.txt includes:
-
+Requirements.txt includes:
 - torch==2.1.2
 - torchvision==0.16.2
 - numpy==1.26.4
@@ -110,6 +109,7 @@ requirements.txt includes:
 - python-multipart
 
 ▶️ Running the Application
+
 Start FastAPI server:
 ```bash
 uvicorn app:app --reload
@@ -142,19 +142,19 @@ Output:
 video_deepfake_model.pth
 ```
 ⚙️ Tech Stack
-Python
-PyTorch
-Torchvision
-OpenCV
-FastAPI
-Uvicorn
-Pillow
-NumPy
+- Python
+- PyTorch
+- Torchvision
+- OpenCV
+- FastAPI
+- Uvicorn
+- Pillow
+- NumPy
 
 📊 Features
-Image Deepfake Detection
-Video Deepfake Detection
-REST API Support
-Web UI
-GPU Support (CUDA)
-Pretrained Backbone
+- Image Deepfake Detection
+- Video Deepfake Detection
+- REST API Support
+- Web UI
+- GPU Support (CUDA)
+- Pretrained Backbone
