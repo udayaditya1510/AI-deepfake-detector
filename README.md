@@ -109,7 +109,6 @@ Requirements.txt includes:
 - python-multipart
 
 ▶️ Running the Application
-
 Start FastAPI server:
 ```bash
 uvicorn app:app --reload
