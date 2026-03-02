@@ -135,14 +135,15 @@ Train Video Model
 python video_train.py
 
 Dataset structure:
-
+```code
 video_dataset/
  ├── real/
  └── fake/
-
+```
 Output:
+```code
 video_deepfake_model.pth
-
+```
 ⚙️ Tech Stack
 Python
 PyTorch
