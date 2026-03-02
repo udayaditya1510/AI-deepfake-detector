@@ -98,7 +98,7 @@ venv\Scripts\activate   # Windows
 ```bash
 pip install -r requirements.txt
 ```
-Requirements.txt includes:
+requirements.txt includes:
 - torch==2.1.2
 - torchvision==0.16.2
 - numpy==1.26.4
